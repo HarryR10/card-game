@@ -1,0 +1,26 @@
+.card {
+  color: red;
+
+  &__layout {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    display: grid;
+    position: relative;
+  }
+
+  &__card-code {
+    font-size: 18px;
+
+    &--inverted {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__pattern {
+    font-size: 36px;
+    margin: auto;
+  }
+}

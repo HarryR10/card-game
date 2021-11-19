@@ -1,0 +1,21 @@
+<ng-container [ngSwitch]="rank">
+    <ng-container *ngSwitchCase="CardRank.Ace">
+        <div class="card__layout">
+            <div class="card__card-code">
+                <div class="offset-left-s">A</div>
+                <i class="icon-spades"></i>
+            </div>
+
+            <i class="icon-spades card__pattern"></i>
+
+            <div class="card__card-code card__card-code--inverted">
+                <div class="offset-left-s">A</div>
+                <i class="icon-spades"></i>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchDefault>
+        <img class="card__layout" src="http://placekitten.com/200/300" alt="flip-side">
+    </ng-container>
+</ng-container>
